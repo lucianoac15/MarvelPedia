@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "264403899073",
+    "firebase_url": "https://marvelpedia-161db.firebaseio.com",
+    "project_id": "marvelpedia-161db",
+    "storage_bucket": "marvelpedia-161db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264403899073:android:ac931e8b6a2aae60",
+        "android_client_info": {
+          "package_name": "lucianoac.marvelpedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264403899073-cm4r8ov5236ssbln9j8ppbas62dakjuf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNSytRyFEelVCRKVphrIB6cf7WSzRfU-Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

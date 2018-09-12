@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Marvelpedia</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="characters_favorite">Favoritos</string>
+    <string name="characters_all">Todos os personagens</string>
+    <string name="characters_seen">Personagens vistos</string>
+
+    <string name="action_settings">Configurações</string>
+    <string name="title_details_activity">Detalhes</string>
+
+    <string name="title_comics">Comics</string>
+    <string name="title_series">Séries</string>
+
+    <string name="title_images">Imagens</string>
+
+    <string name="not_available_description">Descrição não disponível.</string>
+
+    <string name="save_image_success">Imagem salva com sucesso.</string>
+    <string name="share_with">Compartilhar</string>
+
+    <!-- errors -->
+    <string name="error_try_again">Aconteceu um erro ao executar a operação solicitada. Tente novamente.</string>
+    <string name="invalid_url">URL inválida.</string>
+
+    <!-- menus -->
+    <string name="menu_share_image">Compartilhar imagem</string>
+    <string name="menu_save_image">Salvar imagem</string>
+    <string name="menu_open_in_browser">Abrir no navegador</string>
+
+    <!-- Transitions -->
+    <string name="shared_transition_character_image">SharedTransitionCharacterImage</string>
+    <string name="shared_transition_comic_thumb">SharedTransitionComicThumb</string>
+    <string name="shared_transition_comic_image">SharedTransitionComicImage</string>
+    <string name="shared_transition_series_image">SharedTransitionSeriesImage</string>
+
+    <!-- Permissions -->
+    <string name="rationale_permission_write_external_storage">Precisa e permissão de gravação no disposivtivo.</string>
+    <string name="permission_denied_write_external_storage">Arquivo não irá ser salvo</string>
+    <string name="permission_never_ask_again_write_external_storage">Por favor habilite a gravação no dispositivo nas configurações do aplicativo</string>
+
+    <string name="cards_list_empty">Não existem Informações a serem exibidas</string>
+
+    <string name="action_retry">Tentar novamente</string>
+    <string name="action_allow">Permitir</string>
+    <string name="action_deny">Negar</string>
+    <string name="action_see_details">Ver detalhes</string>
+    <string name="action_share">Compartilhar</string>
+    <string name="action_bookmark_add">Adicionar os favoritos</string>
+    <string name="action_bookmark_remove">Remover dos favoritos</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae sem ac orci rutrum scelerisque</string>
+
+
+    <string name="content_description_character_image">Thumbnail do Personagem: %1$s</string>
+    <string name="content_description_character_name">Nome: %1$s</string>
+    <string name="content_description_character_description">Descrição: %1$s</string>
+
+    <string name="content_description_comic_image">Imagem HQ: %1$s</string>
+    <string name="content_description_comic_title">Título: %1$s</string>
+    <string name="content_description_comic_description">Descrição: %1$s</string>
+
+    <string name="content_description_series_image">Imagem da Série: %1$s</string>
+    <string name="content_description_series_title">Titulo: %1$s</string>
+
+    <string name="content_description_retry">Tentar novamente</string>
+
+    <string name="content_description_bookmark_add">@string/action_bookmark_add</string>
+    <string name="content_description_bookmark_remove">@string/action_bookmark_remove</string>
+</resources>

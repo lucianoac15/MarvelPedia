@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+
+        applicationId "lucianoac.marvelpedia"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+
+        buildConfigField 'int', 'LOG_LEVEL', '4'
+
+        buildConfigField 'String', 'MARVEL_API_PUBLIC_KEY', "\"c5d75716d8f88708d5316ea5d8067876\""
+        buildConfigField 'String', 'MARVEL_API_PRIVATE_KEY', "\"68c230e9e752c5ff804eaeb12455ec58135744bb\""
+        buildConfigField 'int', 'HTTP_CONNECTION_TIMEOUT_IN_SECONDS', '60'
+        buildConfigField 'int', 'HTTP_READ_TIMEOUT_IN_SECONDS', '60'
+        buildConfigField 'String', 'ANALYTICS_TRACKING_ID', '"UA-123051403-1"'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            storeFile file("capstone.keystore")
+            storePassword "secret"
+            keyAlias "capstone"
+            keyPassword "secret"
+        }
+    }
+    buildTypes {
+        release {
+            debuggable false
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField 'int', 'LOG_LEVEL', '0'
+
+            signingConfig signingConfigs.release
+        }
+    }
+}
+dependencies {
+
+    configurations {
+        all*.exclude group: 'com.android.support', module: 'support-v13'
+    }
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+
+    implementation 'com.google.android.gms:play-services-analytics:16.0.1'
+
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    implementation "com.github.hotchemi:permissionsdispatcher:3.3.1"
+    annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:3.3.1"
+
+    // Images
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.4'
+
+    implementation 'io.github.inflationx:calligraphy3:3.0.0'
+    implementation 'io.github.inflationx:viewpump:1.0.0'
+
+    implementation 'com.karumi:marvelapiclient:0.0.4'
+
+    // Tests
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'org.mockito:mockito-core:1.10.19'
+
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.1'
+}
+apply plugin: 'com.google.gms.google-services'
+// Work around for onesignal-gradle-plugin compatibility
+com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true

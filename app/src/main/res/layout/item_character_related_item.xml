@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_related_item"
+    android:layout_width="@dimen/comic_closed_card_width"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="@dimen/default_elevation"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_item_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comic_closed_card_image_height"
+            android:transitionName="@string/shared_transition_character_image"
+            android:layout_alignParentTop="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/card_padding">
+
+            <TextView
+                android:id="@+id/text_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comic_closed_card_title_height"
+                style="@style/MarvelPediaTheme.Card.Title"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="14sp"
+                tools:text="Item Name"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
