@@ -14,8 +14,8 @@ android {
 
         buildConfigField 'int', 'LOG_LEVEL', '4'
 
-        buildConfigField 'String', 'MARVEL_API_PUBLIC_KEY', "\"c5d75716d8f88708d5316ea5d8067876\""
-        buildConfigField 'String', 'MARVEL_API_PRIVATE_KEY', "\"68c230e9e752c5ff804eaeb12455ec58135744bb\""
+        buildConfigField 'String', 'MARVEL_API_PUBLIC_KEY', ""
+        buildConfigField 'String', 'MARVEL_API_PRIVATE_KEY', ""
         buildConfigField 'int', 'HTTP_CONNECTION_TIMEOUT_IN_SECONDS', '60'
         buildConfigField 'int', 'HTTP_READ_TIMEOUT_IN_SECONDS', '60'
         buildConfigField 'String', 'ANALYTICS_TRACKING_ID', '"UA-123051403-1"'
